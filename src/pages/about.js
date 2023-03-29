@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "../components/Image";
+import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
 
 export default function aboutMe() {
     return (
-        <>
-            <Navbar />
+        <Layout>
             <main className="mx-auto max-w-4xl w-9/10 flex items-center flex-col">
                 <Image />
                 <h1 className="text-4xl font-bold mb-10">Dr Kim McGuire</h1>
@@ -22,6 +22,6 @@ export default function aboutMe() {
                     rerum officia, iste obcaecati non!
                 </p>
             </main>
-        </>
+        </Layout>
     );
 }
